@@ -50,5 +50,15 @@
             , <&zero_d 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
+
+    leds {
+        compatible = "gpio-leds";
+
+        led0: led_0 {
+            gpios = <&gpio0 16 GPIO_ACTIVE_HIGH>;
+            label = "MCU_LED";
+            default-state = "on";
+        };
+    };
 };
 
