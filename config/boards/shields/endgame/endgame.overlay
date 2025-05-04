@@ -8,6 +8,9 @@
  #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
 
+
+/ {
+
 &spi0 {
     status = "okay";
     cs-gpios = <&gpio0 16 GPIO_ACTIVE_LOW>; // Adjust GPIO pin as needed
@@ -22,8 +25,6 @@
         color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
     };
 };
-
-/ {
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
