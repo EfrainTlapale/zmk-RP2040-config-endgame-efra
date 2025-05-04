@@ -45,6 +45,13 @@
           quick-release;
         };
 
+      led_on: led_on {
+            compatible = "zmk,behavior-output";
+            label = "LED On";
+            gpios = <&gpio0 16 GPIO_ACTIVE_HIGH>;
+            idle-timeout-ms = <0>;
+        };
+
     };
 
     macros {
@@ -148,7 +155,7 @@
         misc {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-           &sys_reset   &trans     &trans     &trans   &bt BT_SEL 0  &kp C_VOL_DN  &kp C_VOL_UP   &kp C_PREV     &kp C_NEXT  &kp C_PP  
+           &sys_reset   &trans     &led_on 0     &trans   &bt BT_SEL 0  &kp C_VOL_DN  &kp C_VOL_UP   &kp C_PREV     &kp C_NEXT  &kp C_PP  
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
           &trans  &trans     &trans     &trans    &bt BT_SEL 1  &kp C_BRI_DN    &kp C_BRI_UP &trans &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
