@@ -45,13 +45,13 @@
           quick-release;
         };
 
-        led_on: led_on {
+      led_on: led_on {
             compatible = "zmk,behavior-output";
             label = "LED On";
             gpios = <&gpio0 16 GPIO_ACTIVE_HIGH>;
-            idle-timeout-ms = <0>;
-            #binding-cells = <1>;
+            idle-timeout-ms = <0>;  // Keep it on indefinitely
         };
+
 
     };
 
