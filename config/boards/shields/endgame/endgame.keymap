@@ -7,12 +7,15 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-
+#include <dt-bindings/zmk/pointing.h>
 
 #define SYMBOLS  1
 #define EXT  2
 #define NUMBERS  3
 #define MISC  4
+#define MOUSE 5
+
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
 
 
 &sk {
@@ -112,11 +115,11 @@
         ext {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-            &kp ESC      &none     &none     &none      &none           &none     &none      &none       &none     &kp PSCRN
+            &kp ESC      &none     &mo MOUSE     &none      &none           &none     &none      &none       &none     &kp PSCRN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
              &sk LALT  &sk LSHFT  &sk LCTRL  &sk LGUI     &trans       &kp LEFT   &kp DOWN     &kp UP    &kp RIGHT  &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-               &none    &none     &none      &kp LGUI      &none       &none      &kp BSPC    &kp TAB     &none      &none
+               &none    &none     &mo MOUSE      &kp LGUI      &none       &none      &kp BSPC    &kp TAB     &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                      &trans  &trans     &trans          &trans     &trans &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -128,7 +131,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
             &kp N1     &kp N2     &kp N3    &kp N4      &kp N5         &kp N6    &kp N7     &kp N8       &kp N9   &kp N0
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-            &sk LALT  &sk LSHFT  &sk LCTRL  &sk LGUI     &kp F11       &kp F12   &close_app    &kp PSCRN  &none     &mo MISC
+            &sk LALT  &sk LSHFT  &sk LCTRL  &sk LGUI     &kp F11       &kp F12   &none    &kp PSCRN  &none     &mo MISC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
             &kp F1      &kp F2     &kp F3     &kp F4     &kp F5          &kp F6     &kp F7     &kp F8     &kp F9     &kp F10 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
@@ -150,6 +153,16 @@
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
+
+                mouse {
+              bindings = <
+                 &none    &none    &none    &none    &none        &none    &mkp LCLK    &mkp RCLK    &none    &none  
+                 &none    &none    &none    &none    &none        &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP    &mmv MOVE_RIGHT  &none
+                 &none    &none    &none    &none    &none        &none    &msc SCRL_DOWN    &msc SCRL_UP    &none    &none 
+                                  &trans   &trans   &trans       &trans   &trans   &trans
+              >;
+          };
+
     };
 };
 
