@@ -36,22 +36,22 @@
             , <&zero_d 26  GPIO_ACTIVE_HIGH>
             , <&zero_d 15  GPIO_ACTIVE_HIGH>
             , <&zero_d 14  GPIO_ACTIVE_HIGH>
-            ,<&zero_d 4 GPIO_ACTIVE_HIGH>
-            , <&zero_d 5 GPIO_ACTIVE_HIGH>
-            , <&zero_d 6 GPIO_ACTIVE_HIGH>
+            ,<&zero_d 8 GPIO_ACTIVE_HIGH>
             , <&zero_d 7 GPIO_ACTIVE_HIGH>
-            , <&zero_d 8 GPIO_ACTIVE_HIGH>
+            , <&zero_d 6 GPIO_ACTIVE_HIGH>
+            , <&zero_d 5 GPIO_ACTIVE_HIGH>
+            , <&zero_d 4 GPIO_ACTIVE_HIGH>
             ;
-            // = <&zero_d 4 GPIO_ACTIVE_HIGH>
-            // , <&zero_d 5 GPIO_ACTIVE_HIGH>
-            // , <&zero_d 6 GPIO_ACTIVE_HIGH>
-            // , <&zero_d 7 GPIO_ACTIVE_HIGH>
-            // , <&zero_d 8 GPIO_ACTIVE_HIGH>
-            // , <&zero_d 28 GPIO_ACTIVE_HIGH>
+            // =  <&zero_d 28 GPIO_ACTIVE_HIGH>
             // , <&zero_d 27  GPIO_ACTIVE_HIGH>
             // , <&zero_d 26  GPIO_ACTIVE_HIGH>
             // , <&zero_d 15  GPIO_ACTIVE_HIGH>
             // , <&zero_d 14  GPIO_ACTIVE_HIGH>
+            // ,<&zero_d 4 GPIO_ACTIVE_HIGH>
+            // , <&zero_d 5 GPIO_ACTIVE_HIGH>
+            // , <&zero_d 6 GPIO_ACTIVE_HIGH>
+            // , <&zero_d 7 GPIO_ACTIVE_HIGH>
+            // , <&zero_d 8 GPIO_ACTIVE_HIGH>
             // ;
 
         row-gpios
