@@ -105,7 +105,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
            &kp UNDER   &kp GRAVE  &kp DQT   &kp SQT      &kp EXCL        &kp LBKT  &kp LPAR    &kp RPAR   &kp RBKT   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-         &kp BACKSLASH &kp PRCNT  &kp TILDE    &none   &kp CARET        &kp DLLR  &kp LBRC  &kp RBRC    &none      &kp AT
+         &kp BACKSLASH &kp PRCNT  &kp TILDE    &none   &kp AT        &kp CARET  &kp LBRC  &kp RBRC    &kp DLLR      &kp AT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                      &trans  &trans     &trans          &trans     &trans &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
