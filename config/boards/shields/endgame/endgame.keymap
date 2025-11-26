@@ -16,6 +16,7 @@
 #define MOUSE 5
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 20
+#define HYPER LS(LC(LA(LGUI)))
 
 
 &sk {
@@ -117,7 +118,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
             &kp ESC      &none     &mo MOUSE     &none      &none           &none     &none      &none       &none     &kp PSCRN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-             &sk LALT  &sk LSHFT  &sk LCTRL  &sk LGUI     &trans       &kp LEFT   &kp DOWN     &kp UP    &kp RIGHT  &none
+             &sk LALT  &sk LSHFT  &sk LCTRL  &sk LGUI     &kp HYPER       &kp LEFT   &kp DOWN     &kp UP    &kp RIGHT  &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                &none    &none     &kp LCTRL      &kp LGUI      &none       &none      &kp BSPC    &kp TAB     &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
