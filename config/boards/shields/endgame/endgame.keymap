@@ -114,7 +114,7 @@
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
             &kp ESC      &none     &mo MOUSE     &none      &none           &none     &none      &none       &none     &kp PSCRN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-             &sk LALT  &sk LSHFT  &sk LCTRL  &sk LGUI     &mt LC(LS(LA(LGUI))) ESC &none       &kp LEFT   &kp DOWN     &kp UP    &kp RIGHT  &none
+             &sk LALT  &sk LSHFT  &sk LCTRL  &sk LGUI  &mt LC(LS(LA(LGUI))) ESC &kp LEFT   &kp DOWN     &kp UP    &kp RIGHT  &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
                &none    &none     &kp LCTRL      &kp LGUI      &none       &none      &kp BSPC    &kp TAB     &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
