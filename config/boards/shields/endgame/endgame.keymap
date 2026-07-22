@@ -120,7 +120,7 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
              &kp LALT  &kp LSHFT  &kp LCTRL  &kp LGUI     &kp HYPER       &kp LEFT   &kp DOWN     &kp UP    &kp RIGHT  &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-               &sk LALT  &sk LSHFT  &sk LCTRL  &sk LGUI      &none       &none      &kp BSPC    &kp TAB     &none      &none
+               &none    &none     &kp LCTRL      &kp LGUI      &none       &none      &kp BSPC    &kp TAB     &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                      &trans  &trans     &trans          &trans     &trans &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
